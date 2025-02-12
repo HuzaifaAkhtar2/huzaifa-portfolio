@@ -182,7 +182,6 @@ header nav ul li a:hover {
 }
 
 .experience-icons {
-    /* text-align: center; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +235,6 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-wrap: wrap; */
     gap: 2rem;
     margin: 20px;
     text-align: justify;
@@ -245,6 +243,7 @@ header nav ul li a:hover {
     border-radius: 10px;
     width: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px var(--shadow-color);
 }
 
 .project-icons a {
@@ -559,21 +558,20 @@ footer p {
     }
 
     header nav ul {
-        /* display: none; */
         flex-direction: column;
         position: absolute;
         top: 0px;
-        padding-top: 90px;
+        padding-top: 70px;
         right: 0px;
         top: -1000px;
         z-index: -1;
-        align-items: flex-end;
+        width: 100%;
+        background: var(--light-bg-color);
     }
 
     .active {
         top: 0;
-        background: var(--light-bg-color);
-        border-bottom-left-radius: 20px;
+        width: 100%;
     }
 }
 

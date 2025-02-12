@@ -4,7 +4,7 @@ const toggle = document.querySelector('.toggle-icon');
 const burgerBtn = document.querySelector('.burger-btn');
 const burger = document.querySelector('.burger-icon');
 const navItems = document.querySelector('header nav ul');
-const navItem = document.querySelector('header nav ul li a');
+const navItem = document.querySelectorAll('header nav ul li');
 
 toggleBtn.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
@@ -18,7 +18,25 @@ burgerBtn.addEventListener("click", () => {
     else { burger.classList.add("ri-menu-line"); burger.classList.remove("ri-close-large-line") }
 })
 
-navItem.addEventListener("click", () => {
+navItem[0].addEventListener("click", () => {
+    navItems.classList.toggle("active")
+    burger.classList.add("ri-menu-line")
+    burger.classList.remove("ri-close-large-line")
+})
+
+navItem[1].addEventListener("click", () => {
+    navItems.classList.toggle("active")
+    burger.classList.add("ri-menu-line")
+    burger.classList.remove("ri-close-large-line")
+})
+
+navItem[2].addEventListener("click", () => {
+    navItems.classList.toggle("active")
+    burger.classList.add("ri-menu-line")
+    burger.classList.remove("ri-close-large-line")
+})
+
+navItem[3].addEventListener("click", () => {
     navItems.classList.toggle("active")
     burger.classList.add("ri-menu-line")
     burger.classList.remove("ri-close-large-line")
